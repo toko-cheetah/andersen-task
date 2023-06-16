@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+main {
+    padding-top: 3rem;
+}
+
+form {
+    width: 25rem;
+    margin: 0 auto;
+}
+
+input,
+textarea,
+.submit-btn,
+th,
+td {
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+}
+
+input,
+textarea,
+.submit-btn {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+ul {
+    text-align: center;
+    animation-name: remove-error;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+li {
+    color: red;
+    margin-bottom: 0.5rem;
+}
+
+#table-container {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 18.75rem;
+    overflow-y: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background: rgb(207, 207, 207);
+}
+
+@keyframes remove-error {
+    0%,
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
